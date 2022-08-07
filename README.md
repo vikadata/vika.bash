@@ -13,8 +13,10 @@ And see what happen.
 ```
 # alias the docker run
 alias vika='docker run -it -v ~/:/root --rm vikadata/vika.bash'
+
 # use your token to login, from UI: Profile -> My Settings -> Developers -> API Token
 vika login _YOUR_TOKEN_HERE_
+
 # Get data
 vika get dstXXXXX  viwYYYYY
 ```
@@ -30,7 +32,7 @@ Also, you can download and run `vika.bash` in your local:
 curl -fsSL https://raw.githubusercontent.com/vikadata/vika.bash/main/vika > vika
 chmod +x ./vika
 ./vika login _YOUR_TOKEN_HERE_
-./vika get dstXXXXX  viwYYYYY
+./vika get dstXXXXX viwYYYYY
 ```
 
 What's more?

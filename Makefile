@@ -18,8 +18,10 @@ bumpversion:
 	docker run --rm -it --user $(id -u):$(id -g) -v "$(shell pwd):/app" vikadata/bumpversion bumpversion patch
 
 .PHONY: docker
-docker:
-	docker build . --tag vikadata/vika.bash; \
-	read -p "Enter the password of hub.docker.com user 'vikadata':" DOCKER_PASSWORD ;\
-	echo $$DOCKER_PASSWORD | docker login -u vikadata --password-stdin ;\
+docker: ## you can run 'DOCKER_HUB_PASSWORD=xxx make docker` to do silent push without prompt
+	docker build . --tag vikadata/vika.bash 
+ifndef DOCKER_HUB_PASSWORD
+	@read -p "Enter the password of hub.docker.com user 'vikadata': " DOCKER_HUB_PASSWORD 
+endif
+	echo $$DOCKER_HUB_PASSWORD | docker login -u vikadata --password-stdin ;\
 	docker push vikadata/vika.bash
