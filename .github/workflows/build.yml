@@ -14,7 +14,7 @@ jobs:
     container: rancher/dind
     steps:
     - uses: actions/checkout@v3
-    - name: Build Bashly
-      run: make build
+    #- name: Build Bashly
+    #  run: make build
     - name: Build and Push the Docker image
       run: DOCKER_HUB_PASSWORD=$DOCKER_HUB_PASSWORD make docker
