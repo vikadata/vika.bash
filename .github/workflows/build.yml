@@ -15,7 +15,5 @@ jobs:
     - uses: actions/checkout@v3
     #- name: Build Bashly
     #  run: make build
-    - name: debug
-      run: echo $DOCKER_HUB_PASSWORD
     - name: Build and Push the Docker image
-      run: make docker DOCKER_HUB_PASSWORD=$DOCKER_HUB_PASSWORD 
+      run: make docker DOCKER_HUB_PASSWORD={{ secrets.DOCKER_HUB_PASSWORD }} 
