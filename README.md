@@ -20,3 +20,9 @@ chmod +x ./vika
 ./vika get dstXXXXX  viwYYYYY
 ```
 
+What's more?
+
+```bash
+./vika -h
+```
+

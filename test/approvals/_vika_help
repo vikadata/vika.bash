@@ -1,0 +1,22 @@
+vika - Vika Bash CLI for
+
+Usage:
+  vika [command]
+  vika [command] --help | -h
+  vika --version | -v
+
+Commands:
+  get     Get Records
+  login   Login with vika-cli with token
+
+Options:
+  --help, -h
+    Show this help
+
+  --version, -v
+    Show version number
+
+Environment Variables:
+  VIKA_HOST
+    Your base vika api host.
+    Default: https://api.vika.cn/fusion/v1

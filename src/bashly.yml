@@ -6,7 +6,7 @@ environment_variables:
 - name: VIKA_HOST
   default: https://api.vika.cn/fusion/v1
   help: |-
-    Your base vika api host, default: https://api.vika.cn/fusion/v1
+    Your base vika api host.
 
 commands:
 - name: get
