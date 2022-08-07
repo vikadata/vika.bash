@@ -1,5 +1,7 @@
 # vika.bash
 
+[![gitpod](https://img.shields.io/badge/gitpod-vika.bash-orange)](https://gitpod.io/#https://github.com/vikadata/vika.bash)
+
 vika.bash is a CLI-tool which make your access [vika.cn](https://vika.cn) easily.
 
 ## Quick Start
