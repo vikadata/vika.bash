@@ -10,7 +10,8 @@ And see what happen.
 
 ```bash
 # download vika.bash cli tool
-curl https://raw.githubusercontent.com/vikadata/vika.bash/main/vika
+curl -fsSL https://raw.githubusercontent.com/vikadata/vika.bash/main/vika > vika
+chmod +x ./vika
 
 # use your token to login, from UI: Profile -> My Settings -> Developers -> API Token
 ./vika login _YOUR_TOKEN_HERE_
