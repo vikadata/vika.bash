@@ -20,7 +20,7 @@ bumpversion:
 .PHONY: docker
 docker: ## you can run 'make docker DOCKER_HUB_PASSWORD=xxx` to do silent push without prompt
 	@if [ "$$DOCKER_HUB_PASSWORD" ]; then\
-		echo "DOCKER_HUB_PASSWORD exist";\
+		echo "DOCKER_HUB_PASSWORD exist $$DOCKER_HUB_PASSWORD";\
 	else\
 		read -p "Enter the password of hub.docker.com user 'vikadata': " DOCKER_HUB_PASSWORD;\
     fi;\
