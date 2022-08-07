@@ -24,6 +24,9 @@ docker: ## you can run 'make docker DOCKER_HUB_PASSWORD=xxx` to do silent push w
 	else\
 		read -p "Enter the password of hub.docker.com user 'vikadata': " DOCKER_HUB_PASSWORD;\
     fi;\
-	docker build . --tag vikadata/vika.bash ;\
+	VERSION=$(shell cat .version);\
+	docker build . --tag vikadata/vika.bash:$$VERSION ;\
+	docker build . --tag vikadata/vika.bash:latest ;\
 	echo $$DOCKER_HUB_PASSWORD | docker login -u vikadata --password-stdin ;\
-	docker push vikadata/vika.bash
+	docker push vikadata/vika.bash:$$VERSION ;\
+	docker push vikadata/vika.bash:latest
