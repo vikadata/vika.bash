@@ -27,6 +27,11 @@ docker: ## you can run 'make docker DOCKER_HUB_PASSWORD=xxx` to do silent push w
 	VERSION=$(shell cat .version);\
 	docker build . --tag vikadata/vika.bash:$$VERSION ;\
 	docker build . --tag vikadata/vika.bash:latest ;\
+	docker build . --tag ghcr.io/vikadata/vika.bash:$$VERSION ;\
+	docker build . --tag ghcr.io/vikadata/vika.bash:latest ;\
 	echo $$DOCKER_HUB_PASSWORD | docker login -u vikadata --password-stdin ;\
 	docker push vikadata/vika.bash:$$VERSION ;\
-	docker push vikadata/vika.bash:latest
+	docker push vikadata/vika.bash:latest ;\
+	echo $$DOCKER_HUB_PASSWORD | docker login ghcr.io -u vikadata --password-stdin ;\
+	docker push ghcr.io/vikadata/vika.bash:$$VERSION ;\
+	docker push ghcr.io/vikadata/vika.bash:latest

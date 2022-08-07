@@ -43,3 +43,10 @@ What's more?
 ./vika -h
 ```
 
+
+## Container Images
+
+`vika.bash` published to the container registry below:
+
+- [Docker Hub](https://hub.docker.com/r/vikadata/vika.bash)
+- [Github Container Registry](https://github.com/orgs/vikadata/packages/container/package/vika.bash)
