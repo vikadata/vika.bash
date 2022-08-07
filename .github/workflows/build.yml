@@ -9,8 +9,8 @@ on:
 jobs:
 
   build:
-
     runs-on: ubuntu-latest
+    environment: hub.docker.com
     steps:
     - uses: actions/checkout@v3
     #- name: Build Bashly
