@@ -1,0 +1,10 @@
+vika - Vika Bash CLI for
+
+Usage:
+  vika [command]
+  vika [command] --help | -h
+  vika --version | -v
+
+Commands:
+  get     Get Records
+  login   Login with vika-cli with token

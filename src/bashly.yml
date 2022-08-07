@@ -1,0 +1,53 @@
+name: vika 
+help: Vika Bash CLI for
+version: 0.1.0
+
+environment_variables:
+- name: VIKA_HOST
+  default: https://api.vika.cn/fusion/v1
+  help: |-
+    Your base vika api host, default: https://api.vika.cn/fusion/v1
+
+commands:
+- name: get
+  alias: g
+  help: Get Records
+
+  args:
+  - name: datasheetId
+    required: true
+    help: Which datasheet's records you want to retrive?
+  - name: viewId
+    help: Which datasheet's view's record you want to retrive?
+
+  # flags:
+  # - long: --force
+  #   short: -f
+  #   help: Overwrite existing files
+
+  examples:
+  - vika get dstXXXXX viwYYYYY
+
+  # environment_variables:
+  # - name: default_target_location
+  #   help: Set the default location to download to
+
+- name: login
+  alias: l
+  help: Login with vika-cli with token
+  args:
+  - name: token
+    required: true
+    help: |-
+      What is your API Token? You can find this through left down corner: Profile -> My Settings -> Developers -> API Token
+
+#   flags:
+#   - long: --user
+#     short: -u
+#     arg: user
+#     help: Username to use for logging in
+#     required: true
+#   - long: --password
+#     short: -p
+#     arg: password
+#     help: Password to use for logging in
