@@ -1,6 +1,6 @@
 # vika.bash
 
-![vika.bash](https://socialify.git.ci/vikadata/vika.bash/image?description=1&forks=1&issues=1&language=1&logo=https%3A%2F%2Fs1.vika.cn%2Fspace%2F2021%2F05%2F06%2Fed51e73eae8340639793bfe95fe3c669&name=1&owner=1&pulls=1&stargazers=1&theme=Light)
+![vika.bash](https://socialify.git.ci/vikadata/vika.bash/image?description=1&font=Raleway&forks=1&issues=1&language=1&logo=https%3A%2F%2Fs1.vika.cn%2Fspace%2F2021%2F05%2F06%2Fed51e73eae8340639793bfe95fe3c669&name=1&owner=1&pattern=Formal%20Invitation&pulls=1&stargazers=1&theme=Dark)
 
 [![open source license](https://img.shields.io/github/license/vikadata/vika.bash)](https://github.com/vikadata/vika.bash)
 [![gitpod](https://img.shields.io/badge/gitpod-vika.bash-orange)](https://gitpod.io/#https://github.com/vikadata/vika.bash)
