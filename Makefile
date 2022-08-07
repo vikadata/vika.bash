@@ -16,3 +16,10 @@ build:
 .PHONY: bumpversion
 bumpversion:
 	docker run --rm -it --user $(id -u):$(id -g) -v "$(shell pwd):/app" vikadata/bumpversion bumpversion patch
+
+.PHONY: docker
+docker:
+	docker build . --tag vikadata/vika.bash; \
+	read -p "Enter the password of hub.docker.com user 'vikadata':" DOCKER_PASSWORD ;\
+	echo $$DOCKER_PASSWORD | docker login -u vikadata --password-stdin ;\
+	docker push vikadata/vika.bash

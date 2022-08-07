@@ -10,4 +10,4 @@ api_token=${args[token]}
 
 echo $api_token > $FILE
 
-echo "Login Success. Save the token to ${FILE}"
+echo "Login Success. Save the token to ~/.vika/api_token"

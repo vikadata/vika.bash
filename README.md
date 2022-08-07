@@ -20,6 +20,15 @@ chmod +x ./vika
 ./vika get dstXXXXX  viwYYYYY
 ```
 
+
+Also, you can run `vika.bash` in docker directly(Recommend for `jq` preinstalled):
+
+```
+alias vika='docker run -it -v ~/:/root --rm vikadata/vika.bash ./vika'
+vika login _YOUR_TOKEN_HERE_
+vika get dstXXXXX  viwYYYYY
+```
+
 What's more?
 
 ```bash
