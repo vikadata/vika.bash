@@ -6,4 +6,4 @@ COPY vika vika
 RUN yum install -y jq
 
 
-CMD [ "./vika" ]
+ENTRYPOINT [ "./vika" ]
