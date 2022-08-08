@@ -49,6 +49,13 @@ What's more?
 ./vika -h
 ```
 
+## What can this use for?
+
+- CI/CD result save;
+- Visual Database;
+- Unit Test base;
+- ....
+
 
 ## Container Images
 
